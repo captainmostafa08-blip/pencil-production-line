@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+  - name: Pencil Production Line Dashboards
+    orgId: 1
+    folder: Pencil Line
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
