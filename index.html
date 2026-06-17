@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pencil Production Line Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1f4e79;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        section {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #1f4e79;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        code {
+            background: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pencil Production Line Simulation</h1>
+    <p>Advanced Programming Project</p>
+    <p>Student: Mostafa Elsayed | Student ID: 100006129</p>
+</header>
+
+<section>
+    <h2>Project Overview</h2>
+    <p>
+        This project simulates a pencil manufacturing production line using Python, a Tkinter-based HMI,
+        InfluxDB, Grafana, and Docker. The system models the assembly process of a pencil and displays
+        production data in a live dashboard.
+    </p>
+</section>
+
+<section>
+    <h2>Production Line Stages</h2>
+    <p>The simulated pencil production line contains five main stages:</p>
+    <ul>
+        <li>S1: Graphite core insertion</li>
+        <li>S2: Wooden body assembly</li>
+        <li>S3: Eraser attachment</li>
+        <li>S4: Eraser holder attachment</li>
+        <li>S5: Final quality control</li>
+    </ul>
+</section>
+
+<section>
+    <h2>System Architecture</h2>
+    <p>
+        The backend logic is implemented in Python. The HMI allows the user to start, stop, reset,
+        and acknowledge faults. Production data is sent to InfluxDB and visualized in Grafana.
+    </p>
+    <ul>
+        <li><strong>Backend:</strong> Python production line logic and defect handling</li>
+        <li><strong>Frontend:</strong> Tkinter HMI with production state display</li>
+        <li><strong>Database:</strong> InfluxDB time-series database</li>
+        <li><strong>Dashboard:</strong> Grafana panels for live production monitoring</li>
+        <li><strong>Deployment:</strong> Docker Compose for InfluxDB and Grafana containers</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Quality Control</h2>
+    <p>
+        The program marks pencils as defective when faults are detected, such as a missing or broken
+        graphite core, cracked wooden body, missing eraser, loose eraser holder, or final quality issue.
+        Defective products are counted and the defect reason is displayed on the HMI.
+    </p>
+</section>
+
+<section>
+    <h2>Grafana Dashboard</h2>
+    <p>
+        The Grafana dashboard displays live production parameters from InfluxDB, including:
+    </p>
+    <ul>
+        <li>Produced pencils</li>
+        <li>Defective pencils</li>
+        <li>Machine temperature</li>
+        <li>Machine state</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Tools Used</h2>
+    <ul>
+        <li>Python</li>
+        <li>Tkinter</li>
+        <li>InfluxDB</li>
+        <li>Grafana</li>
+        <li>Docker Desktop</li>
+        <li>Docker Compose</li>
+        <li>Visual Studio Code</li>
+        <li>GitHub and GitHub Pages</li>
+        <li>ChatGPT for coding support and troubleshooting</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Repository</h2>
+    <p>
+        The project source files are available in the GitHub repository:
+    </p>
+    <p>
+        <a href="https://github.com/captainmostafa08-blip/pencil-production-line">
+            GitHub Repository
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>Advanced Programming Project | SRH | 2026</p>
+</footer>
+
+</body>
+</html>
